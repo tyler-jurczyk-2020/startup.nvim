@@ -326,7 +326,7 @@ function startup.mapping_names(mappings)
                     mapping[1] .. space .. parse_mapping(mapping[3])
                 )
             else
-                local space = utils.spaces(length - #mapping[1])
+                local space = utils.spaces(length - #mapping[1] - 16)
                 table.insert(mapnames, mapping[1] .. space)
             end
         end
